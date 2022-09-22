@@ -11,14 +11,18 @@ apiVersion: extensions/v1beta1
 {{- end }}
 kind: Ingress
 metadata:
-  name: {{ $fullName }}
+  name: {{ $fullName }}-ingress
   labels:
     {{- include "mastodon.labels" . | nindent 4 }}
   {{- with .Values.ingress.annotations }}
   annotations:
     {{- toYaml . | nindent 4 }}
+    # nginx.ingress.kubernetes.io/proxy-read-timeout: "3600"
+    # nginx.ingress.kubernetes.io/proxy-send-timeout: "3600"
+    nginx.org/websocket-services: {{ $fullName }}-streaming
   {{- end }}
 spec:
+  ingressClassName: nginx
   {{- if .Values.ingress.tls }}
   tls:
     {{- range .Values.ingress.tls }}
@@ -35,20 +39,6 @@ spec:
       http:
         paths:
           {{- range .paths }}
-          - path: {{ .path }}
-            backend:
-              {{- if or ($.Capabilities.APIVersions.Has "networking.k8s.io/v1/Ingress") (not ($.Capabilities.APIVersions.Has "networking.k8s.io/v1beta1/Ingress")) }}
-              service:
-                name: {{ $fullName }}-web
-                port:
-                  number: {{ $webPort }}
-              {{- else }}
-              serviceName: {{ $fullName }}-web
-              servicePort: {{ $webPort }}
-              {{- end }}
-            {{- if or ($.Capabilities.APIVersions.Has "networking.k8s.io/v1/Ingress") (not ($.Capabilities.APIVersions.Has "networking.k8s.io/v1beta1/Ingress")) }}
-            pathType: ImplementationSpecific
-            {{- end }}
           - path: {{ .path }}api/v1/streaming
             backend:
               {{- if or ($.Capabilities.APIVersions.Has "networking.k8s.io/v1/Ingress") (not ($.Capabilities.APIVersions.Has "networking.k8s.io/v1beta1/Ingress")) }}
@@ -62,6 +52,20 @@ spec:
               {{- end }}
             {{- if or ($.Capabilities.APIVersions.Has "networking.k8s.io/v1/Ingress") (not ($.Capabilities.APIVersions.Has "networking.k8s.io/v1beta1/Ingress")) }}
             pathType: ImplementationSpecific
+            {{- end }}
+          - path: {{ .path }}
+            backend:
+              {{- if or ($.Capabilities.APIVersions.Has "networking.k8s.io/v1/Ingress") (not ($.Capabilities.APIVersions.Has "networking.k8s.io/v1beta1/Ingress")) }}
+              service:
+                name: {{ $fullName }}-web
+                port:
+                  number: {{ $webPort }}
+              {{- else }}
+              serviceName: {{ $fullName }}-web
+              servicePort: {{ $webPort }}
+              {{- end }}
+            {{- if or ($.Capabilities.APIVersions.Has "networking.k8s.io/v1/Ingress") (not ($.Capabilities.APIVersions.Has "networking.k8s.io/v1beta1/Ingress")) }}
+            pathType: Prefix
             {{- end }}
           {{- end }}
     {{- end }}
