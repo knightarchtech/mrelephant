@@ -4,8 +4,23 @@ This is a [Helm](https://helm.sh/) chart for installing Mastodon into a
 Kubernetes cluster.  The basic usage is:
 
 1. edit `values.yaml` or create a separate yaml file for custom values
-1. `helm dep update`
-1. `helm install --namespace mastodon --create-namespace my-mastodon ./ -f path/to/additional/values.yaml`
+1. create namespace
+  <pre>kubectl create ns mrelephant</pre>
+1. create TLS secret
+  <pre>/bin/sh ../scripts/create-self-signed-cert.sh mrelephant-tls mrelephant</pre>
+1. run helm install
+  <pre>
+  helm dep update
+  helm install \
+    --namespace mrelephant \
+    --create-namespace mrelephant ./ -f values_mrelephant.yaml
+  </pre>
+1. reset admin password
+  <pre>
+  kubectl -n mrelephant exec \
+   -it pod/$(kubectl -n mrelephant get pods |grep mastodon-web |awk {'print $1'}) \
+   -- tootctl accounts modify mastadmin --reset-password
+  </pre>
 
 This chart has been tested on Helm 3.0.1 and above.
 
