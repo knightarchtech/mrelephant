@@ -1,7 +1,6 @@
 ---
 sk:
   about:
-    about_hashtag_html: Toto sú verejné príspevky, otagované pod <strong>#%{hashtag}</strong>. Ak máš účet hocikde v rámci fediversa, môžeš s nimi narábať.
     about_mastodon_html: Mastodon je sociálna sieť založená na otvorených webových protokoloch a na slobodnom softvéri. Je decentralizovaná, podobne ako email.
     about_this: O tomto serveri
     active_count_after: aktívni
@@ -9,14 +8,11 @@ sk:
     administered_by: 'Správcom je:'
     apps: Aplikácie
     apps_platforms: Užívaj Mastodon z iOSu, Androidu, a iných platforiem
-    browse_directory: Prehľadávaj databázu profilov, a filtruj podľa záujmov
-    browse_local_posts: Prebádaj naživo prúd verejných príspevkov z tohto servera
     browse_public_posts: Sleduj naživo prúd verejných príspevkov na Mastodone
     contact: Kontakt
     contact_missing: Nezadaný
     contact_unavailable: Neuvedený/á
     continue_to_web: Pokračovať na webovú aplikáciu
-    discover_users: Objavuj užívateľov
     documentation: Dokumentácia
     federation_hint_html: S účtom na %{instance} budeš môcť následovať ľúdí na hociakom Mastodon serveri, ale aj na iných serveroch.
     get_apps: Vyskúšaj aplikácie
@@ -27,7 +23,6 @@ sk:
     learn_more: Zisti viac
     logged_in_as_html: Práve si prihlásený/á ako %{username}.
     logout_before_registering: Už si prihlásený/á.
-    privacy_policy: Zásady súkromia
     rules: Serverové pravidlá
     see_whats_happening: Pozoruj, čo sa deje
     server_stats: 'Serverové štatistiky:'
@@ -39,7 +34,6 @@ sk:
       other: príspevky
     status_count_before: Ktorí napísali
     tagline: Decentralizovaná sociálna sieť
-    terms: Podmienky užitia
     unavailable_content: Nedostupný obsah
     unavailable_content_description:
       reason: 'Dôvod:'
@@ -255,7 +249,6 @@ sk:
         change_email_user_html: "%{name} zmenil/a emailovú adresu užívateľa %{target}"
         confirm_user_html: "%{name} potvrdil/a emailovú adresu používateľa %{target}"
         create_account_warning_html: "%{name} poslal/a upozornenie užívateľovi %{target}"
-      deleted_status: "(zmazaný príspevok)"
       filter_by_action: Filtruj podľa úkonu
       filter_by_user: Trieď podľa užívateľa
       title: Kontrólny záznam
@@ -552,9 +545,6 @@ sk:
           none: Nikto sa nemôže registrovať
           open: Ktokoľvek sa môže zaregistrovať
         title: Režím registrácií
-      show_known_fediverse_at_about_page:
-        desc_html: Ak je zapnuté, bude v ukážke osi možné nahliadnúť príspevky z celého známeho fediversa. Inak budú ukázané iba príspevky z miestnej osi.
-        title: Ukáž celé známe fediverse na náhľade osi
       site_description:
         desc_html: Oboznamujúci paragraf na hlavnej stránke a pri meta tagoch. Opíš, čo robí tento Mastodon server špecifickým, a ďalej hocičo iné, čo považuješ za dôležité. Môžeš použiť HTML kód, hlavne <code>&lt;a&gt;</code> a <code>&lt;em&gt;</code>.
         title: Popis servera
@@ -564,9 +554,6 @@ sk:
       site_short_description:
         desc_html: Zobrazené na bočnom paneli a pri meta tagoch. Popíš čo je Mastodon, a čo robí tento server iným, v jednom paragrafe. Pokiaľ toto necháš prázdne, bude tu zobrazený základný popis servera.
         title: Krátky popis serveru
-      site_terms:
-        desc_html: Môžeš si napísať svoje vlastné pravidla o súkromí, prevádzke, alebo aj iné legality. Môžeš tu používať HTML kód
-        title: Vlastné pravidlá prevádzky
       site_title: Názov servera
       thumbnail:
         desc_html: Používané pre náhľady cez OpenGraph a API. Doporučuje sa rozlišenie 1200x630px
@@ -575,9 +562,6 @@ sk:
         desc_html: Zobraziť verejnú nástenku na hlavnej stránke
         title: Náhľad nástenky
       title: Nastavenia stránky
-      trendable_by_default:
-        desc_html: Ovplyvňuje haštagy ktoré predtým neboli zakázané
-        title: Dovoľ haštagom zobrazovať sa ako populárne, bez predchodzieho posudzovania
       trends:
         desc_html: Verejne zobraz už schválené haštagy, ktoré práve trendujú
         title: Populárne haštagy
@@ -743,10 +727,6 @@ sk:
       more_details_html: Pre viac podrobností, pozri <a href="%{terms_path}">zásady súkromia</a>.
       username_available: Tvoje užívateľské meno bude znova dostupné
       username_unavailable: Tvoja prezývka ostane neprístupná
-  directories:
-    directory: Katalóg profilov
-    explanation: Pátraj po užívateľoch podľa ich záujmov
-    explore_mastodon: Prebádaj %{title}
   domain_validator:
     invalid_domain: nieje správny tvar domény
   errors:
@@ -913,16 +893,6 @@ sk:
     carry_blocks_over_text: Tento užívateľ sa presunul z účtu %{acct}, ktorý si mal/a zablokovaný.
     carry_mutes_over_text: Tento užívateľ sa presunul z účtu %{acct}, ktorý si mal/a stíšený.
   notification_mailer:
-    digest:
-      action: Zobraziť všetky notifikácie
-      body: Tu nájdete krátky súhrn správ ktoré ste zmeškali od svojej poslednj návštevi od %{since}
-      mention: "%{name} ťa spomenul/a v:"
-      new_followers_summary:
-        few: A ešte, kým si bol/a preč, si získal/a %{count} nových následovateľov! Hurá!
-        many: A ešte, kým si bol/a preč, si získal/a %{count} nových následovateľov! Hurá!
-        one: A ešte, kým si bol/a preč, si získal/a jedného nového následovateľa! Hurá!
-        other: A ešte, kým si bol/a preč, si získal/a %{count} nových následovateľov! Hurá!
-      title: Zatiaľ čo si bol/a preč…
     favourite:
       body: 'Tvoj príspevok bol uložený medzi obľúbené užívateľa %{name}:'
       subject: "%{name} si obľúbil/a tvoj príspevok"
@@ -1118,8 +1088,6 @@ sk:
     sensitive_content: Senzitívny obsah
   tags:
     does_not_match_previous_name: nezhoduje sa s predošlým názvom
-  terms:
-    title: Podmienky užívania, a pravidlá súkromia pre %{instance}
   themes:
     contrast: Mastodon (vysoký kontrast)
     default: Mastodon (tmavý)

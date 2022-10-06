@@ -1,7 +1,6 @@
 ---
 kk:
   about:
-    about_hashtag_html: Бұл жерде <strong>#%{hashtag}</strong> хэштегімен жинақталған жазбалар. Желіге тіркеліп, сіз де қосыла аласыз бұл ортаға.
     about_mastodon_html: Mastodon - әлеуметтік желіге негізделген, тегін және веб протоколды, ашық кодты бағдарлама. Ол email сияқты орталығы жоқ құрылым.
     about_this: Туралы
     active_count_after: актив
@@ -9,13 +8,10 @@ kk:
     administered_by: 'Админ:'
     apps: Мобиль қосымшалар
     apps_platforms: iOS, Android және басқа платформалардағы Mastodon қолданыңыз
-    browse_directory: Профильдер каталогын қажет фильтрлер арқылы қараңыз
-    browse_local_posts: Осы желідегі ашық посттар стримын қараңыз
     browse_public_posts: Mastodon-дағы ашық посттар стримын қараңыз
     contact: Байланыс
     contact_missing: Бапталмаған
     contact_unavailable: Белгісіз
-    discover_users: Қолданушыларды іздеңіз
     documentation: Құжаттама
     federation_hint_html: "%{instance} платформасындағы аккаунтыңыз арқылы Mastodon желісіндегі кез келген сервердегі қолданушыларға жазыла аласыз."
     get_apps: Мобиль қосымшаны қолданып көріңіз
@@ -24,7 +20,6 @@ kk:
       Бұл аккаунт кез-келген жеке пайдаланушыны емес, сервердің өзін көрсету үшін қолданылатын виртуалды актер.
       Ол федерация мақсаттарында қолданылады және сіз барлығын бұғаттағыңыз келмейінше, бұғатталмауы керек, бұл жағдайда сіз домен блогын қолданған жөн.
     learn_more: Көбірек білу
-    privacy_policy: Құпиялылық саясаты
     see_whats_happening: Не болып жатқанын қараңыз
     server_stats: 'Сервер статистикасы:'
     source_code: Ашық коды
@@ -32,7 +27,6 @@ kk:
       one: жазба
       other: жазба
     status_count_before: Барлығы
-    terms: Қолдану шарттары
     unavailable_content: Қолжетімсіз контент
     unavailable_content_description:
       domain: Сервер
@@ -175,7 +169,6 @@ kk:
       web: Веб
       whitelisted: Рұқсат тізімі
     action_logs:
-      deleted_status: "(өшірілген жазба)"
       title: Аудит логы
     announcements:
       destroyed_msg: Анонс сәтті өшірілді!
@@ -382,9 +375,6 @@ kk:
           none: Ешкім тіркеле алмайды
           open: Бәрі тіркеле алады
         title: Тіркелулер
-      show_known_fediverse_at_about_page:
-        desc_html: When toggled, it will show toots from all the known fediverse on preview. Otherwise it will only show жергілікті toots.
-        title: Show known fediverse on timeline превью
       site_description:
         desc_html: Introductory paragraph on the басты бет. Describe what makes this Mastodon server special and anything else important. You can use HTML tags, in particular <code>&lt;a&gt;</code> and <code>&lt;em&gt;</code>.
         title: Сервер туралы
@@ -394,9 +384,6 @@ kk:
       site_short_description:
         desc_html: Displayed in sidebar and meta tags. Describe what Mastodon is and what makes this server special in a single paragraph. If empty, defaults to сервер description.
         title: Short сервер description
-      site_terms:
-        desc_html: You can write your own privacy policy, terms of service or other legalese. You can use HTML тег
-        title: Қолдану шарттары мен ережелер
       site_title: Сервер аты
       thumbnail:
         desc_html: Used for previews via OpenGraph and API. 1200x630px рекоменделеді
@@ -405,9 +392,6 @@ kk:
         desc_html: Display public timeline on лендинг пейдж
         title: Таймлайн превьюі
       title: Сайт баптаулары
-      trendable_by_default:
-        desc_html: Бұрын тыйым салынбаған хэштегтерге әсер етеді
-        title: Хэштегтерге алдын-ала шолусыз тренд беруге рұқсат етіңіз
       trends:
         desc_html: Бұрын қарастырылған хэштегтерді қазіргі уақытта трендте көпшілікке көрсету
         title: Тренд хештегтер
@@ -550,10 +534,6 @@ kk:
       more_details_html: Қосымша мәліметтер алу үшін <a href="%{terms_path}"> құпиялылық саясатын </a> қараңыз.
       username_available: Аккаунтыңыз қайтадан қолжетімді болады
       username_unavailable: Логиніңіз қолжетімді болмайды
-  directories:
-    directory: Профильдер каталогы
-    explanation: Қолданушыларды қызығушылықтарына қарай реттеу
-    explore_mastodon: "%{title} шарлау"
   domain_validator:
     invalid_domain: жарамды домен атауы емес
   errors:
@@ -685,14 +665,6 @@ kk:
   moderation:
     title: Модерация
   notification_mailer:
-    digest:
-      action: Барлық ескертпелер
-      body: Міне, соңғы кірген уақыттан кейін келген хаттардың қысқаша мазмұны %{since}
-      mention: "%{name} сізді атап өтіпті:"
-      new_followers_summary:
-        one: Сондай-ақ, сіз бір жаңа оқырман таптыңыз! Алақай!
-        other: Сондай-ақ, сіз %{count} жаңа оқырман таптыңыз! Керемет!
-      title: Сіз жоқ кезде...
     favourite:
       body: 'Жазбаңызды ұнатып, таңдаулыға қосты %{name}:'
       subject: "%{name} жазбаңызды таңдаулыға қосты"
@@ -892,8 +864,6 @@ kk:
     sensitive_content: Нәзік мазмұн
   tags:
     does_not_match_previous_name: алдыңғы атқа сәйкес келмейді
-  terms:
-    title: "%{instance} Қызмет көрсету шарттары және Құпиялылық саясаты"
   themes:
     contrast: Mastodon (Жоғары контраст)
     default: Mastodon (Қою)

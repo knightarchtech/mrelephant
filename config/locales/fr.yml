@@ -1,7 +1,6 @@
 ---
 fr:
   about:
-    about_hashtag_html: Voici des messages publics tagués avec <strong>#%{hashtag}</strong>. Vous pouvez interagir avec si vous avez un compte n’importe où dans le fédiverse.
     about_mastodon_html: 'Le réseau social de l''avenir : pas de publicité, pas de surveillance institutionnelle, conception éthique et décentralisation ! Gardez le contrôle de vos données avec Mastodon !'
     about_this: À propos
     active_count_after: actif·ve·s
@@ -10,14 +9,11 @@ fr:
     api: API
     apps: Applications mobiles
     apps_platforms: Utilisez Mastodon depuis iOS, Android et d’autres plates-formes
-    browse_directory: Parcourir l’annuaire des profils et filtrer par centres d’intérêts
-    browse_local_posts: Parcourir en direct un flux de messages publics depuis ce serveur
     browse_public_posts: Parcourir en direct un flux de messages publics sur Mastodon
     contact: Contact
     contact_missing: Non défini
     contact_unavailable: Non disponible
     continue_to_web: Continuer vers l’application web
-    discover_users: Découvrez des utilisateur·rice·s
     documentation: Documentation
     federation_hint_html: Avec un compte sur %{instance}, vous pourrez suivre des gens sur n’importe quel serveur Mastodon et au-delà.
     get_apps: Essayez une application mobile
@@ -28,7 +24,6 @@ fr:
     learn_more: En savoir plus
     logged_in_as_html: Vous êtes actuellement connecté·e en tant que %{username}.
     logout_before_registering: Vous êtes déjà connecté·e.
-    privacy_policy: Politique de confidentialité
     rules: Règles du serveur
     rules_html: 'Voici un résumé des règles que vous devez suivre si vous voulez avoir un compte sur ce serveur de Mastodon :'
     see_whats_happening: Quoi de neuf
@@ -39,7 +34,6 @@ fr:
       other: messages
     status_count_before: Ayant publié
     tagline: Réseau social décentralisé
-    terms: Conditions d’utilisation
     unavailable_content: Serveurs modérés
     unavailable_content_description:
       domain: Serveur
@@ -297,7 +291,6 @@ fr:
         create_unavailable_domain_html: "%{name} a arrêté la livraison vers le domaine %{target}"
         demote_user_html: "%{name} a rétrogradé l'utilisateur·rice %{target}"
         destroy_announcement_html: "%{name} a supprimé l'annonce %{target}"
-        destroy_custom_emoji_html: "%{name} a détruit l'émoji %{target}"
         destroy_domain_allow_html: "%{name} a rejeté la fédération avec le domaine %{target}"
         destroy_domain_block_html: "%{name} a débloqué le domaine %{target}"
         destroy_email_domain_block_html: "%{name} a débloqué le domaine de courriel %{target}"
@@ -332,7 +325,6 @@ fr:
         update_custom_emoji_html: "%{name} a mis à jour l'émoji %{target}"
         update_domain_block_html: "%{name} a mis à jour le blocage de domaine pour %{target}"
         update_status_html: "%{name} a mis à jour le message de %{target}"
-      deleted_status: "(message supprimé)"
       empty: Aucun journal trouvé.
       filter_by_action: Filtrer par action
       filter_by_user: Filtrer par utilisateur·ice
@@ -771,9 +763,6 @@ fr:
           none: Personne ne peut s’inscrire
           open: N’importe qui peut s’inscrire
         title: Mode d’enregistrement
-      show_known_fediverse_at_about_page:
-        desc_html: Lorsque désactivée, restreint le fil public accessible via la page d’accueil de l’instance pour ne montrer que le contenu local
-        title: Inclure le contenu fédéré sur la page de fil public sans authentification
       site_description:
         desc_html: Paragraphe introductif sur l'API. Décrivez les particularités de ce serveur Mastodon et précisez toute autre chose qui vous semble importante. Vous pouvez utiliser des balises HTML, en particulier <code>&lt;a&gt;</code> et <code>&lt;em&gt;</code>.
         title: Description du serveur
@@ -783,9 +772,6 @@ fr:
       site_short_description:
         desc_html: Affichée dans la barre latérale et dans les méta-tags. Décrivez ce qui rend spécifique ce serveur Mastodon en un seul paragraphe. Si laissée vide, la description du serveur sera affiché par défaut.
         title: Description courte du serveur
-      site_terms:
-        desc_html: Vous pouvez écrire votre propre politique de confidentialité, conditions d’utilisation ou autre jargon juridique. Vous pouvez utiliser des balises HTML
-        title: Politique de confidentialité
       site_title: Nom du serveur
       thumbnail:
         desc_html: Utilisée pour les prévisualisations via OpenGraph et l’API. 1200x630px recommandé
@@ -794,9 +780,6 @@ fr:
         desc_html: Afficher un lien vers le fil public sur la page d’accueil et autoriser l'accès anonyme au fil public via l'API
         title: Autoriser la prévisualisation anonyme du fil global
       title: Paramètres du serveur
-      trendable_by_default:
-        desc_html: Affecte les hashtags qui n'ont pas été précédemment non autorisés
-        title: Autoriser les hashtags à apparaître dans les tendances sans approbation préalable
       trends:
         desc_html: Afficher publiquement les hashtags approuvés qui sont populaires en ce moment
         title: Hashtags populaires
@@ -1097,10 +1080,6 @@ fr:
       more_details_html: Pour plus de détails, voir la <a href="%{terms_path}">politique de confidentialité</a>.
       username_available: Votre nom d’utilisateur·rice sera à nouveau disponible
       username_unavailable: Votre nom d’utilisateur·rice restera indisponible
-  directories:
-    directory: Annuaire des profils
-    explanation: Découvrir des utilisateur·rice·s en fonction de leurs centres d’intérêt
-    explore_mastodon: Explorer %{title}
   disputes:
     strikes:
       action_taken: Mesure prise
@@ -1319,17 +1298,6 @@ fr:
         subject: "%{name} a soumis un signalement"
       sign_up:
         subject: "%{name} s'est inscrit·e"
-    digest:
-      action: Voir toutes les notifications
-      body: Voici un bref résumé des messages que vous avez raté depuis votre dernière visite le %{since}
-      mention: "%{name} vous a mentionné⋅e dans :"
-      new_followers_summary:
-        one: De plus, vous avez un·e nouvel·le abonné·e ! Youpi !
-        other: De plus, vous avez %{count} abonné·e·s de plus ! Incroyable !
-      subject:
-        one: "Une nouvelle notification depuis votre dernière visite 🐘"
-        other: "%{count} nouvelles notifications depuis votre dernière visite 🐘"
-      title: Pendant votre absence…
     favourite:
       body: "%{name} a ajouté votre message à ses favoris :"
       subject: "%{name} a ajouté votre message à ses favoris"
@@ -1692,7 +1660,6 @@ fr:
       <p>Ce document est publié sous licence CC-BY-SA. Il a été mis à jour pour la dernière fois le 26 mai 2022.</p>
 
       <p>Initialement adapté de la <a href="https://github.com/discourse/discourse">politique de confidentialité de Discourse</a>.</p>
-    title: Conditions d’utilisation et politique de confidentialité de %{instance}
   themes:
     contrast: Mastodon (Contraste élevé)
     default: Mastodon (Sombre)

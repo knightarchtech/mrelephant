@@ -1,7 +1,6 @@
 ---
 gl:
   about:
-    about_hashtag_html: Estas son publicacións públicas etiquetadas con <strong>#%{hashtag}</strong>. Podes interactuar con elas se tes unha conta nalgures do fediverso.
     about_mastodon_html: 'A rede social do futuro: Sen publicidade, sen seguimento por empresas, deseño ético e descentralización! En Mastodon ti posúes os teus datos!'
     about_this: Acerca de
     active_count_after: activas
@@ -10,14 +9,11 @@ gl:
     api: API
     apps: Aplicacións móbiles
     apps_platforms: Emprega Mastodon dende iOS, Android e outras plataformas
-    browse_directory: Mira o directorio e filtra por intereses
-    browse_local_posts: Unha ollada aos últimos comentarios públicos neste servidor
     browse_public_posts: Cronoloxía en directo cos comentarios públicos en Mastodon
     contact: Contacto
     contact_missing: Non establecido
     contact_unavailable: Non dispoñíbel
     continue_to_web: Continuar na app web
-    discover_users: Descubrir usuarias
     documentation: Documentación
     federation_hint_html: Cunha conta en %{instance} poderás seguir ás persoas en calquera servidor do Mastodon e alén.
     get_apps: Probar unha aplicación móbil
@@ -28,7 +24,7 @@ gl:
     learn_more: Saber máis
     logged_in_as_html: Entraches como %{username}.
     logout_before_registering: Xa iniciaches sesión.
-    privacy_policy: Política de privacidade
+    privacy_policy: Política de Privacidade
     rules: Regras do servidor
     rules_html: 'Aquí tes un resumo das regras que debes seguir se queres ter unha conta neste servidor de Mastodon:'
     see_whats_happening: Mira o que acontece
@@ -39,7 +35,6 @@ gl:
       other: publicacións
     status_count_before: Que publicaron
     tagline: Rede social descentralizada
-    terms: Termos do servizo
     unavailable_content: Contido non dispoñíbel
     unavailable_content_description:
       domain: Servidor
@@ -235,17 +230,21 @@ gl:
         approve_user: Aprobar Usuaria
         assigned_to_self_report: Asignar denuncia
         change_email_user: Editar email da usuaria
+        change_role_user: Cambiar Rol da Usuaria
         confirm_user: Confirmar usuaria
         create_account_warning: Crear aviso
         create_announcement: Crear anuncio
+        create_canonical_email_block: Crear Bloqueo de email
         create_custom_emoji: Crear emoticonas personalizadas
         create_domain_allow: Crear Dominio Permitido
         create_domain_block: Crear bloquedo do Dominio
         create_email_domain_block: Crear bloqueo de dominio de correo electrónico
         create_ip_block: Crear regra IP
         create_unavailable_domain: Crear dominio Non dispoñible
+        create_user_role: Crear Rol
         demote_user: Degradar usuaria
         destroy_announcement: Eliminar anuncio
+        destroy_canonical_email_block: Eliminar Bloqueo de email
         destroy_custom_emoji: Eliminar emoticona personalizada
         destroy_domain_allow: Eliminar Dominio permitido
         destroy_domain_block: Eliminar bloqueo do Dominio
@@ -254,6 +253,7 @@ gl:
         destroy_ip_block: Eliminar regra IP
         destroy_status: Eliminar publicación
         destroy_unavailable_domain: Eliminar dominio Non dispoñible
+        destroy_user_role: Eliminar Rol
         disable_2fa_user: Desactivar 2FA
         disable_custom_emoji: Desactivar emoticona personalizada
         disable_sign_in_token_auth_user: Desactivar Autenticación por token no email para Usuaria
@@ -280,24 +280,30 @@ gl:
         update_announcement: Actualizar anuncio
         update_custom_emoji: Actualizar emoticona personalizada
         update_domain_block: Actualizar bloqueo do dominio
+        update_ip_block: Actualizar regra IP
         update_status: Actualizar publicación
+        update_user_role: Actualizar Rol
       actions:
         approve_appeal_html: "%{name} aprobou a apelación da decisión da moderación de %{target}"
         approve_user_html: "%{name} aprobou o rexistro de %{target}"
         assigned_to_self_report_html: "%{name} asignou a denuncia %{target} para si mesma"
         change_email_user_html: "%{name} cambiou o enderezo de email da usuaria %{target}"
+        change_role_user_html: "%{name} cambiou o rol de %{target}"
         confirm_user_html: "%{name} confirmou o enderezo de email da usuaria %{target}"
         create_account_warning_html: "%{name} envioulle unha advertencia a %{target}"
         create_announcement_html: "%{name} creou un novo anuncio %{target}"
+        create_canonical_email_block_html: "%{name} bloqueou o email con hash %{target}"
         create_custom_emoji_html: "%{name} subiu un novo emoji %{target}"
         create_domain_allow_html: "%{name} permitiu a federación co dominio %{target}"
         create_domain_block_html: "%{name} bloqueou o dominio %{target}"
         create_email_domain_block_html: "%{name} bloqueou o dominio de email %{target}"
         create_ip_block_html: "%{name} creou regra para o IP %{target}"
         create_unavailable_domain_html: "%{name} deixou de interactuar co dominio %{target}"
+        create_user_role_html: "%{name} creou o rol %{target}"
         demote_user_html: "%{name} degradou a usuaria %{target}"
         destroy_announcement_html: "%{name} eliminou o anuncio %{target}"
-        destroy_custom_emoji_html: "%{name} destruíu o emoji %{target}"
+        destroy_canonical_email_block_html: "%{name} desbloqueou o email con hash %{target}"
+        destroy_custom_emoji_html: "%{name} eliminou o emoji %{target}"
         destroy_domain_allow_html: "%{name} retirou a federación co dominio %{target}"
         destroy_domain_block_html: "%{name} desbloqueou o dominio %{target}"
         destroy_email_domain_block_html: "%{name} desbloqueou o dominio de email %{target}"
@@ -305,6 +311,7 @@ gl:
         destroy_ip_block_html: "%{name} eliminou a regra para o IP %{target}"
         destroy_status_html: "%{name} eliminou a publicación de %{target}"
         destroy_unavailable_domain_html: "%{name} retomou a interacción co dominio %{target}"
+        destroy_user_role_html: "%{name} eliminou o rol %{target}"
         disable_2fa_user_html: "%{name} desactivou o requerimento do segundo factor para a usuaria %{target}"
         disable_custom_emoji_html: "%{name} desactivou o emoji %{target}"
         disable_sign_in_token_auth_user_html: "%{name} desactivou a autenticación por token no email para %{target}"
@@ -331,8 +338,9 @@ gl:
         update_announcement_html: "%{name} actualizou o anuncio %{target}"
         update_custom_emoji_html: "%{name} actualizou o emoji %{target}"
         update_domain_block_html: "%{name} actualizou o bloqueo do dominio para %{target}"
+        update_ip_block_html: "%{name} cambiou a regra para IP %{target}"
         update_status_html: "%{name} actualizou a publicación de %{target}"
-      deleted_status: "(publicación eliminada)"
+        update_user_role_html: "%{name} cambiou o rol %{target}"
       empty: Non se atoparon rexistros.
       filter_by_action: Filtrar por acción
       filter_by_user: Filtrar por usuaria
@@ -771,9 +779,6 @@ gl:
           none: Rexistro pechado
           open: Rexistro aberto
         title: Estado do rexistro
-      show_known_fediverse_at_about_page:
-        desc_html: Si activado, mostraralle os toots de todo o fediverso coñecido nunha vista previa. Si non só mostrará os toots locais.
-        title: Incluír contido federado na páxina da cronoloxía pública sen autenticación
       site_description:
         desc_html: Parágrafo de presentación na páxina principal. Describe o que fai especial a este servidor Mastodon e calquera outra ouca importante. Pode utilizar cancelos HTML, en particular <code>&lt;a&gt;</code> e <code>&lt;em&gt;</code>.
         title: Descrición do servidor
@@ -784,8 +789,8 @@ gl:
         desc_html: Amosado na barra lateral e nos cancelos meta. Describe o que é Mastodon e que fai especial a este servidor nun só parágrafo. Se está baleiro, amosará a descrición do servidor.
         title: Descrición curta do servidor
       site_terms:
-        desc_html: Podes escribir a túa propia política de privacidade, termos de servizo ou aclaracións legais. Podes empregar cancelos HTML
-        title: Termos de servizo personalizados
+        desc_html: Podes escribir a túa propia Política de Privacidade e usar etiquetas HTML
+        title: Política de Privacidade propia
       site_title: Nome do servidor
       thumbnail:
         desc_html: Utilizado para vistas previsas vía OpenGraph e API. Recoméndase 1200x630px
@@ -795,8 +800,8 @@ gl:
         title: Permitir acceso á cronoloxía pública sen autenticación
       title: Axustes do sitio
       trendable_by_default:
-        desc_html: Afecta ós cancelos que non foron rexeitados de xeito previo
-        title: Permite ós cancelos ser tendencia sen revisión previa
+        desc_html: Poderase prohibir igualmente contido en voga específico
+        title: Permitir tendencias sen aprobación previa
       trends:
         desc_html: Amosar de xeito público cancelos revisados previamente que actualmente son tendencia
         title: Cancelos en tendencia
@@ -1097,10 +1102,6 @@ gl:
       more_details_html: Para máis detalles, mira a <a href="%{terms_path}">política de intimidade</a>.
       username_available: O nome de usuaria estará dispoñible novamente
       username_unavailable: O nome de usuaria non estará dispoñible
-  directories:
-    directory: Directorio de perfís
-    explanation: Descubre usuarias según o teu interese
-    explore_mastodon: Explorar %{title}
   disputes:
     strikes:
       action_taken: Acción tomada
@@ -1182,7 +1183,7 @@ gl:
       add_keyword: Engadir palabra chave
       keywords: Palabras chave
       statuses: Publicacións individuais
-      statuses_hint_html: Este filtro aplícase para seleccionar publicacións individuais independentemente de se concordan coas palabras chave aquí indicadas. Podes revisar estas publicacións e eliminalas do filtro <a href="%{path}">premendo aquí</a>.
+      statuses_hint_html: O filtro aplícase para seleccionar publicacións individuais independentemente de se concorda coas palabras chave indicadas. <a href="%{path}">Revisa ou elimina publicacións do filtro</a>.
       title: Editar filtro
     errors:
       deprecated_api_multiple_keywords: Estes parámetros non se poden cambiar desde esta aplicación porque son de aplicación a máis dun filtro de palabras chave. Usa unha aplicación máis recente ou a interface web.
@@ -1211,7 +1212,7 @@ gl:
       batch:
         remove: Eliminar do filtro
       index:
-        hint: Este filtro aplícase para seleccionar publicacións individuais independentemente de outros criterios. Podes engadir máis publicacións a este filtro desde a interface Web.
+        hint: Este filtro aplícase para seleccionar publicacións individuais independentemente de outros criterios. Podes engadir máis publicacións a este filtro desde a interface web.
         title: Publicacións filtradas
   footer:
     developers: Desenvolvedoras
@@ -1220,12 +1221,22 @@ gl:
     trending_now: Tendencia agora
   generic:
     all: Todo
+    all_items_on_page_selected_html:
+      one: "<strong>%{count}</strong> elemento seleccionado nesta páxina."
+      other: Tódolos <strong>%{count}</strong> elementos desta páxina están seleccionados.
+    all_matching_items_selected_html:
+      one: "<strong>%{count}</strong> elemento coincidente coa busca está seleccionado."
+      other: Tódolos <strong>%{count}</strong> elementos coincidentes coa busca están seleccionados.
     changes_saved_msg: Cambios gardados correctamente!!
     copy: Copiar
     delete: Eliminar
+    deselect: Desmarcar todo
     none: Ningún
     order_by: Ordenar por
     save_changes: Gardar cambios
+    select_all_matching_items:
+      one: Seleccionar %{count} elemento coincidente coa busca.
+      other: Seleccionar tódolos %{count} elementos coincidentes coa busca.
     today: hoxe
     validation_errors:
       one: Algo non está ben de todo! Por favor revise abaixo o erro
@@ -1334,17 +1345,6 @@ gl:
         subject: "%{name} enviou unha denuncia"
       sign_up:
         subject: "%{name} rexistrouse"
-    digest:
-      action: Ver todas as notificacións
-      body: Aquí ten un breve resumo das mensaxes publicadas desde a súa última visita en %{since}
-      mention: "%{name} mencionouna en:"
-      new_followers_summary:
-        one: Ademáis, ten unha nova seguidora desde entón! Ben!
-        other: Ademáis, obtivo %{count} novas seguidoras desde entón! Tremendo!
-      subject:
-        one: "1 nova notificación desde a última visita 🐘"
-        other: "%{count} novas notificacións desde a última visita 🐘"
-      title: Na súa ausencia...
     favourite:
       body: 'A túa publicación foi marcada como favorita por %{name}:'
       subject: "%{name} marcou como favorita a túa publicación"
@@ -1674,7 +1674,7 @@ gl:
             <p>Se decidimos cambiar a nosa política de privacidade publicaremos os cambios nesta páxina.</p>
             <p>Este documento ten licenza CC-BY-SA. Actualizouse o 26 de maio de 2022.</p>
             <p>Adaptado do orixinal <a href="https://github.com/discourse/discourse">política de privacidade de Discourse</a>.</p>
-    title: "%{instance} Termos do Servizo e Política de Intimidade"
+    title: Política de Privacidade de %{instance}
   themes:
     contrast: Mastodon (Alto contraste)
     default: Mastodon (Escuro)

@@ -1,7 +1,6 @@
 ---
 fa:
   about:
-    about_hashtag_html: این‌ها نوشته‌های عمومی هستند که برچسب (هشتگ) <strong>#%{hashtag}</strong> را دارند. اگر شما روی هر کارسازی حساب داشته باشید می‌توانید به این نوشته‌ها واکنش نشان دهید.
     about_mastodon_html: 'شبکهٔ اجتماعی آینده: بدون تبلیغات، بدون شنود از طرف شرکت‌ها، طراحی اخلاق‌مدار، و معماری غیرمتمرکز! با ماستودون صاحب داده‌های خودتان باشید!'
     about_this: درباره
     active_count_after: فعّال
@@ -10,14 +9,11 @@ fa:
     api: رابط برنامه‌نویسی کاربردی
     apps: اپ‌های موبایل
     apps_platforms: ماستودون را در iOS، اندروید، و سایر سیستم‌ها داشته باشید
-    browse_directory: شاخهٔ نمایه‌ای را مرور کرده و بر حسب علاقه، بپالایید
-    browse_local_posts: جریانی زنده از فرسته‌های عمومی این کارساز را ببینید
     browse_public_posts: جریانی زنده از فرسته‌های عمومی روی ماستودون را ببینید
     contact: تماس
     contact_missing: تنظیم نشده
     contact_unavailable: موجود نیست
     continue_to_web: در کارهٔ وب ادامه دهید
-    discover_users: یافتن کاربران
     documentation: مستندات
     federation_hint_html: با حسابی روی %{instance} می‌توانید افراد روی هر کارساز ماستودون و بیش از آن را پی بگیرید.
     get_apps: یک اپ موبایل را بیازمایید
@@ -28,7 +24,6 @@ fa:
     learn_more: بیشتر بدانید
     logged_in_as_html: شما هم‌اکنون به عنوان %{username} وارد شده‌اید.
     logout_before_registering: شما هم‌اکنون وارد شده‌اید.
-    privacy_policy: سیاست رازداری
     rules: قوانین کارساز
     rules_html: 'در زیر خلاصه‌ای از قوانینی که در صورت علاقه به داشتن حسابی روی این کارساز ماستودون، باید رعایت کنید آمده است:'
     see_whats_happening: ببینید چه خبر است
@@ -38,7 +33,6 @@ fa:
       one: چیز نوشته‌اند
       other: چیز نوشته‌اند
     status_count_before: که در کنار هم
-    terms: شرایط خدمت
     unavailable_content: محتوای ناموجود
     unavailable_content_description:
       domain: کارساز
@@ -284,7 +278,6 @@ fa:
         create_unavailable_domain_html: "%{name} تحویل محتوا به دامنه %{target} را متوقف کرد"
         demote_user_html: "%{name} کاربر %{target} را تنزل داد"
         destroy_announcement_html: "%{name} اعلامیهٔ %{target} را حذف کرد"
-        destroy_custom_emoji_html: "%{name} اموجی %{target} را نابود کرد"
         destroy_domain_allow_html: "%{name} دامنهٔ %{target} را از فهرست مجاز برداشت"
         destroy_domain_block_html: "%{name} انسداد دامنهٔ %{target} را رفع کرد"
         destroy_email_domain_block_html: "%{name} انسداد دامنهٔ رایانامهٔ %{target} را برداشت"
@@ -319,7 +312,6 @@ fa:
         update_custom_emoji_html: "%{name} شکلک %{target} را به‌روز کرد"
         update_domain_block_html: "%{name} مسدودسازی دامنه را برای %{target} به‌روزرسانی کرد"
         update_status_html: "%{name} نوشتهٔ %{target} را به‌روز کرد"
-      deleted_status: "(نوشتهٔ پاک‌شده)"
       empty: هیچ گزارشی پیدا نشد.
       filter_by_action: پالایش بر اساس کنش
       filter_by_user: پالایش بر اساس کاربر
@@ -654,9 +646,6 @@ fa:
           none: کسی نمی‌تواند ثبت نام کند
           open: همه می‌توانند ثبت نام کنند
         title: شرایط ثبت نام
-      show_known_fediverse_at_about_page:
-        desc_html: اگر از کار انداخته شود، خط‌زمانی همگانی را محدود می‌کند؛ تا فقط محتوای محلّی را نمایش دهد.
-        title: نمایش سرورهای دیگر در پیش‌نمایش این سرور
       site_description:
         desc_html: معرفی کوتاهی دربارهٔ رابط برنامه‌نویسی کاربردی. دربارهٔ این که چه چیزی دربارهٔ این کارساز ماستودون ویژه است یا هر چیز مهم دیگری بنویسید. می‌توانید HTML بنویسید، به‌ویژه <code>&lt;a&gt;</code> و <code>&lt;em&gt;</code>.
         title: دربارهٔ این سرور
@@ -666,9 +655,6 @@ fa:
       site_short_description:
         desc_html: روی نوار کناری و همچنین به عنوان فرادادهٔ صفحه‌ها نمایش می‌یابد. در یک بند توضیح دهید که ماستودون چیست و چرا این کارساز با بقیه فرق دارد.
         title: توضیح کوتاه دربارهٔ سرور
-      site_terms:
-        desc_html: می‌توانید سیاست رازداری، شرایط استفاده، یا سایر مسائل قانونی را به دلخواه خود بنویسید. تگ‌های HTML هم مجاز است
-        title: شرایط استفادهٔ سفارشی
       site_title: نام سرور
       thumbnail:
         desc_html: برای دیدن با OpenGraph و رابط برنامه‌نویسی. وضوح پیشنهادی ۱۲۰۰×۶۳۰ پیکسل
@@ -677,9 +663,6 @@ fa:
         desc_html: نوشته‌های عمومی این سرور را در صفحهٔ آغازین نشان دهید
         title: پیش‌نمایش نوشته‌ها
       title: تنظیمات سایت
-      trendable_by_default:
-        desc_html: روی برچسب‌هایی که پیش از این ممنوع نشده‌اند تأثیر می‌گذارد
-        title: بگذارید که برچسب‌های پرطرفدار بدون بازبینی قبلی نمایش داده شوند
       trends:
         desc_html: برچسب‌های عمومی که پیش‌تر بازبینی شده‌اند و هم‌اینک پرطرفدارند
         title: پرطرفدارها
@@ -901,10 +884,6 @@ fa:
       more_details_html: برای اطلاعات بیشتر <a href="%{terms_path}">سیاست رازداری</a> را ببینید.
       username_available: نام کاربری شما دوباره در دسترس خواهد بود
       username_unavailable: نام کاربری شما برای دیگران غیرقابل دسترس خواهد ماند
-  directories:
-    directory: شاخهٔ نمایه
-    explanation: کاربران را بر اساس علاقه‌مندی‌هایشان بیابید
-    explore_mastodon: گشت و گذار در %{title}
   disputes:
     strikes:
       appeal: درخواست تجدیدنظر
@@ -1093,14 +1072,6 @@ fa:
     admin:
       sign_up:
         subject: "%{name} ثبت نام کرد"
-    digest:
-      action: دیدن تمامی آگاهی‌ها
-      body: خلاصه‌ای از پیغام‌هایی که از زمان آخرین بازدید شما در %{since} فرستاده شد
-      mention: "%{name} این‌جا از شما نام برد:"
-      new_followers_summary:
-        one: در ضمن، وقتی که نبودید یک پیگیر تازه پیدا کردید! ای ول!
-        other: در ضمن، وقتی که نبودید %{count} پیگیر تازه پیدا کردید! چه عالی!
-      title: در مدتی که نبودید...
     favourite:
       body: "%{name} این نوشتهٔ شما را پسندید:"
       subject: "%{name} نوشتهٔ شما را پسندید"
@@ -1365,8 +1336,6 @@ fa:
     sensitive_content: محتوای حساس
   tags:
     does_not_match_previous_name: با نام پیشین مطابق نیست
-  terms:
-    title: شرایط استفاده و سیاست رازداری %{instance}
   themes:
     contrast: ماستودون (سایه‌روشن بالا)
     default: ماستودون (تیره)

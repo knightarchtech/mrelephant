@@ -1,7 +1,6 @@
 ---
 he:
   about:
-    about_hashtag_html: אלו הודעות פומביות המתוייגות בתור<strong>#%{hashtag}</strong>. ניתן להגיב, להדהד או לחבב אותם אם יש לך חשבון בכל מקום שהוא בפדרציה.
     about_mastodon_html: מסטודון היא רשת חברתית <em>חופשית, מבוססת תוכנה חופשית ("קוד פתוח")</em>. כאלטרנטיבה <em>בלתי ריכוזית</em> לפלטפרומות המסחריות, מסטודון מאפשרת להמנע מהסיכונים הנלווים להפקדת התקשורת שלך בידי חברה יחידה. שמת את מבטחך בשרת אחד &mdash; לא משנה במי בחרת, תמיד אפשר לדבר עם כל שאר המשתמשים. לכל מי שרוצה יש את האפשרות להקים שרת מסטודון עצמאי, ולהשתתף ב<em>רשת החברתית</em> באופן חלק.
     about_this: אודות שרת זה
     active_count_after: פעיל
@@ -10,14 +9,11 @@ he:
     api: ממשק
     apps: יישומונים לנייד
     apps_platforms: שימוש במסטודון מ-iOS, אנדרואיד ופלטפורמות אחרות
-    browse_directory: עיון בספריית פרופילים וסינון לפי תחומי עניין
-    browse_local_posts: עיון בפיד חי של חצרוצים פומביים בשרת זה
     browse_public_posts: עיון בפיד חי של חצרוצים פומביים בשרת זה
     contact: יצירת קשר
     contact_missing: ללא הגדרה
     contact_unavailable: לא רלוונטי/חסר
     continue_to_web: להמשיך לאפליקציית ווב
-    discover_users: גילוי משתמשים
     documentation: תיעוד
     federation_hint_html: עם חשבון ב-%{instance} ניתן לעקוב אחרי אנשים בכל שרת מסטודון ומעבר.
     get_apps: נסה/י יישומון לנייד
@@ -28,7 +24,6 @@ he:
     learn_more: מידע נוסף
     logged_in_as_html: הנך מחובר/ת כרגע כ-%{username}.
     logout_before_registering: חשבון זה כבר מחובר.
-    privacy_policy: מדיניות פרטיות
     rules: כללי השרת
     rules_html: 'להלן סיכום הכללים שעליך לעקוב אחריהם על מנת להשתמש בחשבון בשרת מסטודון זה:'
     see_whats_happening: מה קורה כעת
@@ -41,7 +36,6 @@ he:
       two: פוסטים
     status_count_before: שכתבו
     tagline: רשת חברתית מבוזרת
-    terms: תנאי שימוש
     unavailable_content: שרתים מוגבלים
     unavailable_content_description:
       domain: שרת
@@ -245,6 +239,7 @@ he:
         approve_user: אישור משתמש
         assigned_to_self_report: הקצאת דו"ח
         change_email_user: שינוי כתובת דוא"ל למשתמש
+        change_role_user: שינוי תפקיד למשתמש
         confirm_user: אשר משתמש
         create_account_warning: יצירת אזהרה
         create_announcement: יצירת הכרזה
@@ -254,6 +249,7 @@ he:
         create_email_domain_block: יצירת חסימת דומיין דוא"ל
         create_ip_block: יצירת כלל IP
         create_unavailable_domain: יצירת דומיין בלתי זמין
+        create_user_role: יצירת תפקיד
         demote_user: הורדת משתמש בדרגה
         destroy_announcement: מחיקת הכרזה
         destroy_custom_emoji: מחיקת אמוג'י יחודי
@@ -264,6 +260,7 @@ he:
         destroy_ip_block: מחיקת כלל IP
         destroy_status: מחיקת פוסט
         destroy_unavailable_domain: מחיקת דומיין בלתי זמין
+        destroy_user_role: מחיקת תפקיד
         disable_2fa_user: השעיית זיהוי דו-גורמי
         disable_custom_emoji: השעיית אמוג'י מיוחד
         disable_sign_in_token_auth_user: השעיית אסימון הזדהות בדוא"ל של משתמש
@@ -291,11 +288,13 @@ he:
         update_custom_emoji: עדכון סמלון מותאם אישית
         update_domain_block: עדכון חסימת שם מתחם
         update_status: סטטוס עדכון
+        update_user_role: עדכון תפקיד
       actions:
         approve_appeal_html: "%{name} אישר/ה ערעור על החלטת מנהלי הקהילה מ-%{target}"
         approve_user_html: "%{name} אישר/ה הרשמה מ-%{target}"
         assigned_to_self_report_html: '%{name} הקצה/תה דו"ח %{target} לעצמם'
         change_email_user_html: '%{name} שינה/תה את כתובת הדוא"ל של המשתמש %{target}'
+        change_role_user_html: "%{name} שינה את התפקיד של %{target}"
         confirm_user_html: '%{name} אישר/ה את כותבת הדו"אל של המשתמש %{target}'
         create_account_warning_html: "%{name} שלח/ה אזהרה ל %{target}"
         create_announcement_html: "%{name} יצר/ה הכרזה חדשה %{target}"
@@ -305,9 +304,10 @@ he:
         create_email_domain_block_html: '%{name} חסם/ה את דומיין הדוא"ל %{target}'
         create_ip_block_html: "%{name} יצר/ה כלל עבור IP %{target}"
         create_unavailable_domain_html: "%{name} הפסיק/ה משלוח לדומיין %{target}"
+        create_user_role_html: "%{name} יצר את התפקיד של %{target}"
         demote_user_html: "%{name} הוריד/ה בדרגה את המשתמש %{target}"
         destroy_announcement_html: "%{name} מחק/ה את ההכרזה %{target}"
-        destroy_custom_emoji_html: "%{name} השמיד/ה את האמוג'י %{target}"
+        destroy_custom_emoji_html: "%{name} מחק אמוג'י של %{target}"
         destroy_domain_allow_html: "%{name} לא התיר/ה פדרציה עם הדומיין %{target}"
         destroy_domain_block_html: "%{name} הסיר/ה חסימה מהדומיין %{target}"
         destroy_email_domain_block_html: '%{name} הסיר/ה חסימה מדומיין הדוא"ל %{target}'
@@ -315,6 +315,7 @@ he:
         destroy_ip_block_html: "%{name} מחק/ה את הכלל עבור IP %{target}"
         destroy_status_html: "%{name} הסיר/ה פוסט מאת %{target}"
         destroy_unavailable_domain_html: "%{name} התחיל/ה מחדש משלוח לדומיין %{target}"
+        destroy_user_role_html: "%{name} ביטל את התפקיד של %{target}"
         disable_2fa_user_html: "%{name} ביטל/ה את הדרישה לאימות דו-גורמי למשתמש %{target}"
         disable_custom_emoji_html: "%{name} השבית/ה את האמוג'י %{target}"
         disable_sign_in_token_auth_user_html: '%{name} השבית/ה את האימות בעזרת אסימון דוא"ל עבור %{target}'
@@ -342,7 +343,7 @@ he:
         update_custom_emoji_html: "%{name} עדכן/ה אמוג'י %{target}"
         update_domain_block_html: "%{name} עדכן/ה חסימת דומיין עבור %{target}"
         update_status_html: "%{name} עדכן/ה פוסט של %{target}"
-      deleted_status: "(פוסט נמחק)"
+        update_user_role_html: "%{name} שינה את התפקיד של %{target}"
       empty: לא נמצאו יומנים.
       filter_by_action: סינון לפי פעולה
       filter_by_user: סינון לפי משתמש
@@ -803,9 +804,6 @@ he:
           none: אף אחד לא יכול להרשם
           open: כל אחד יכול להרשם
         title: מצב הרשמות
-      show_known_fediverse_at_about_page:
-        desc_html: כאשר לא מופעל, מגביל את הפיד הפומבי המקושר מדף הנחיתה להצגת תוכן מקומי בלבד
-        title: הכללת תוכן פדרטיבי בדף הפיד הפומבי הבלתי מאומת
       site_description:
         desc_html: מוצג כפסקה על הדף הראשי ומשמש כתגית מטא. ניתן להשתמש בתגיות HTML, ובמיוחד ב־<code> &lt; a&gt; </code> ו־<code> &lt; em&gt; </code> .
         title: תיאור האתר
@@ -815,9 +813,6 @@ he:
       site_short_description:
         desc_html: מוצג בעמודה הצידית ובמטא תגים. מתאר מהו מסטודון ומה מיחד שרת זה בפסקה בודדת.
         title: תאור שרת קצר
-      site_terms:
-        desc_html: ניתן לכתוב מדיניות פרטיות, תנאי שירות ושאר מסמכים חוקיים בעצמך. ניתן להשתמש בתגי HTML
-        title: תנאי שירות יחודיים
       site_title: כותרת האתר
       thumbnail:
         desc_html: משמש לתצוגה מקדימה דרך OpenGraph והממשק. מומלץ 1200x630px
@@ -826,9 +821,6 @@ he:
         desc_html: הצגת קישורית לפיד הפומבי מדף הנחיתה והרשאה לממשק לגשת לפיד הפומבי ללא אימות
         title: הרשאת גישה בלתי מאומתת לפיד הפומבי
       title: הגדרות אתר
-      trendable_by_default:
-        desc_html: משפיע על האשתגיות שלא נאסרו קודם לכן
-        title: הרשאה להאשתגיות להופיע בנושאים החמים ללא אישור מוקדם
       trends:
         desc_html: הצגה פומבית של תוכן שנסקר בעבר ומופיע כרגע בנושאים החמים
         title: נושאים חמים
@@ -1136,10 +1128,6 @@ he:
       more_details_html: לפרטים נוספים, ראו את <a href="%{terms_path}">מדיניות הפרטיות</a>.
       username_available: שם המשתמש שלך שוב יהיה זמין
       username_unavailable: שם המשתמש שלך יישאר בלתי זמין
-  directories:
-    directory: מדריך פרופילים
-    explanation: גלו משתמשים בהתבסס על תחומי העניין שלהם
-    explore_mastodon: חקור את %{title}
   disputes:
     strikes:
       action_taken: הפעולה שבוצעה
@@ -1220,6 +1208,7 @@ he:
     edit:
       add_keyword: הוספת מילת מפתח
       keywords: מילות מפתח
+      statuses: פוסטים יחידים
       title: ערוך מסנן
     errors:
       deprecated_api_multiple_keywords: לא ניתן לשנות פרמטרים אלו מהיישומון הזה בגלל שהם חלים על יותר ממילת מפתח אחת. ניתן להשתמש ביישומון מעודכן יותר או בממשק הוובי.
@@ -1239,6 +1228,13 @@ he:
     new:
       save: שמירת מסנן חדש
       title: הוספת מסנן חדש
+    statuses:
+      back_to_filter: חזרה לפילטר
+      batch:
+        remove: הסרה מפילטר
+      index:
+        hint: פילטר זה חל באופן של בחירת פוסטים בודדים ללא תלות בקריטריונים אחרים. תוכלו להוסיף עוד פוסטים לפילטר זה ממשק הווב.
+        title: פוסטים שסוננו
   footer:
     developers: מפתחות
     more: עוד…
@@ -1249,6 +1245,7 @@ he:
     changes_saved_msg: השינויים נשמרו בהצלחה!
     copy: להעתיק
     delete: למחוק
+    deselect: בטל בחירה של הכל
     none: כלום
     order_by: מיין לפי
     save_changes: שמור שינויים
@@ -1364,21 +1361,6 @@ he:
         subject: '%{name} שלח/ה דו"ח'
       sign_up:
         subject: "%{name} נרשמו"
-    digest:
-      action: הצגת כל ההתראות
-      body: להלן סיכום זריז של הדברים שקרו על מאז ביקורך האחרון ב-%{since}
-      mention: "%{name} פנה אליך ב:"
-      new_followers_summary:
-        many: חוץ מזה, נוספו לך %{count} עוקבים חדשים בזמן שלא היית! מדהים!
-        one: חוץ מזה, נוסף לך עוקב חדש בזמן שלא היית! הידד!
-        other: חוץ מזה, נוספו לך %{count} עוקבים חדשים בזמן שלא היית! מדהים!
-        two: חוץ מזה, נוספו לך %{count} עוקבים חדשים בזמן שלא היית! מדהים!
-      subject:
-        many: "%{count} התראות חדשות מאז ביקורך האחרון 🐘"
-        one: "התראה חדשה אחת מאז ביקורך האחרון 🐘"
-        other: "%{count} התראות חדשות מאז ביקורך האחרון 🐘"
-        two: "%{count} התראות חדשות מאז ביקורך האחרון 🐘"
-      title: בהעדרך...
     favourite:
       body: 'חצרוצך חובב על ידי %{name}:'
       subject: חצרוצך חובב על ידי %{name}
@@ -1753,7 +1735,6 @@ he:
       <p>This document is CC-BY-SA. It was last updated May 26, 2022.</p>
 
       <p>Originally adapted from the <a href="https://github.com/discourse/discourse">Discourse privacy policy</a>.</p>
-    title: תנאי שימוש ומדיניות פרטיות ב-%{instance}
   themes:
     contrast: מסטודון (ניגודיות גבוהה)
     default: מסטודון (כהה)
