@@ -8,7 +8,7 @@ import NotificationsCounterIcon from './notifications_counter_icon';
 import FollowRequestsNavLink from './follow_requests_nav_link';
 import ListPanel from './list_panel';
 import TrendsContainer from 'mastodon/features/getting_started/containers/trends_container';
-import Logo from 'mastodon/components/logo';
+import LogoCustom from 'mastodon/components/logo-custom';
 import SignInBanner from './sign_in_banner';
 
 export default class NavigationPanel extends React.Component {
@@ -24,7 +24,8 @@ export default class NavigationPanel extends React.Component {
     return (
       <div className='navigation-panel'>
         <div className='navigation-panel__logo'>
-          <Link to='/' className='column-link column-link--logo'><Logo /></Link>
+          {/* <Link to='/' className='column-link column-link--logo'><Logo /></Link> */}
+          <Link to='/' className='column-link column-link--logo'><LogoCustom /></Link>
           <hr />
         </div>
 
