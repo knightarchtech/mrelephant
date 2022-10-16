@@ -19,7 +19,8 @@ module BrandingHelper
   end
 
   def render_logo
-    image_pack_tag('logo.svg', alt: 'Mastodon', class: 'logo logo--icon')
+    # image_pack_tag('logo.svg', alt: 'Mastodon', class: 'logo logo--icon')
+    image_pack_tag('logo-mrelephant.svg', alt: 'Mastodon', class: 'logo logo--icon')
   end
 
   def render_symbol(version = :icon)
