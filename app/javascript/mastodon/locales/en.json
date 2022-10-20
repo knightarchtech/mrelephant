@@ -224,7 +224,7 @@
   "generic.saved": "Saved",
   "getting_started.directory": "Directory",
   "getting_started.documentation": "Documentation",
-  "getting_started.free_software_notice": "Mastodon is free, open source software. You can view the source code, contribute or report issues at {repository}.",
+  "getting_started.free_software_notice": "This site is based on Mastodon project. Mastodon is free, open source software. You can view the source code, contribute or report issues at {repository}.",
   "getting_started.heading": "Getting started",
   "getting_started.invite": "Invite people",
   "getting_started.privacy_policy": "Privacy Policy",
